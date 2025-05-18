@@ -167,7 +167,7 @@
     </dependency>
   </dependencies>
   <properties>
-    <swagger-core-version>1.5.8</swagger-core-version>
+    <swagger-core-version>1.6.15</swagger-core-version>
     <feign-version>8.16.0</feign-version>
     <jackson-version>2.7.0</jackson-version>
     <jodatime-version>2.9.3</jodatime-version>
