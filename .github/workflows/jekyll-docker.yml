@@ -1,3 +1,26 @@
+from /usr/gem/gems/mercenary-0.4.0/lib/mercenary permissions:
+   - Although chmod -R 777 is.rb:21:in `program'
+from /usr/gem used, there could still be/gems /srv/jekyll`, which should make all files readable/writable, but ensure permission issues. Double-check the mount paths and that the files exist and are accessible.
+
+3. Jekyll dependencies that all source files are checked in and accessible.
+
+**Suggested Workflow Update:**
+Edit your/jekyll-4.2.2/exe/jekyll:15:in `<top workflow file [.github/workflows/jekyll-docker.yml](https (://github.com/mathi3u7/swagger-codegen.xencert/blob/8becabf7533b4c97fe7b71fdbf5a5b6a3d65b97a/.githubrequired)>'
+from /usr/gem/bin/jekyll:25:
+   - If your site requires additional gems, ensure they are specified in a Gemfile. The jekyll/builder image installs gems from Gemfile by default.
+
+4. Debugging:
+   - Add verbose/workflows/jekyll-docker.yml):
+
+Replace:
+:in `load'
+from /usr/gem```yaml
+20|         jekyll/builder:latest flags to your build command for more detailed logs:
+     /bin/bash -c "chmod -R 777 ```yaml
+     jekyll build --future --trace --verbose
+     ```
+   - Update your/bin workflow step in .github/workflows /srv/jekyll && jekyll build --future"
+
 name: Jekyll site CI
 
 on:
@@ -5,10 +28,34 @@ on:
     branches: [ "master" ]
   pull_request:
     branches: [ "master" ]
+ 
+jobs: 
+**If you don't have a Gemfile, }}/_site:/srv/jekyll/_site \
+         jekyll/builder:latest /bin/bash - add this to your repo:**
+```ruby
+ the root of your repository. Jekyll requires this file to build successfully.
+2. Validate the contents of _configc "chmod -R 777 /srv/jekyll && jekyll build --future --trace --verbose"
+     ```
 
-jobs:
-  build:{
-	"name": "vscode-docker",
+5. Validate your Jekyll site locally to catch errors before pushing.
+
+Addressing the missing or broken _config.yml and using more verbose build output should help you identify and resolve the root cause. If errors persist, review the new logs for specific issues.# Gemfile
+source "https://rubygems.org"
+gem "jekyll", "~> 4..yml for YAML syntax errors.
+32.2"
+# Add other plugins. If you have custom plugins or dependencies, ensure they are installed or included in your Docker build step.
+
+Example minimal _config.yml:
+
+```yaml
+title: Swagger Codegen Xencert Docs
+description: Documentation site
+theme: minima
+  build:source "https://rubygems.org"
+gem "jekyll", "~> 4.2.2"
+# Add more gems if you use plugins
+
+	"name": "https://rubygems.orgvscode-docker",
 	"version": "1.29.6",
 	"publisher": "ms-azuretools",
 	"displayName": "Docker",
